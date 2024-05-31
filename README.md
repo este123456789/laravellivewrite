@@ -1,15 +1,34 @@
-# Laravel 10 Boilerplate / Livewire + Jetstream
+# Laravel 10  Livewire + Tailwind
 
-The goal of this project is to serve as a boilerplate for Laravel 10
-utilizing light-weight alpine linux images for nginx and php 8.2 (fpm)
-while keeping the front-end stuff as containerized as possible.
+# Author
 
-While this isn't to my taste it might be a good place to start if
-you're js/ts-interested but not committed to learning Vue directly.
+Esteban Villa R.
 
-Stack:
+2025
 
-- app @ php:8.2-fpm-alpine
+
+#Description
+Test carried out for Farmalink company.
+
+
+# Step by step
+- run in terminal: npm install
+- run in terminal: php artisan migrate
+- run in terminal: php artisan run serve
+- Import database db.sql
+   
+
+# Login in
+--http://127.0.0.1:8000/login
+-- User : e@e.com
+-- Pass : 123
+
+
+
+
+# Stack:
+
+- app @ php:8.1-fpm-alpine
 - nginx @ nginx:alpine
 - mysql @ mysql
 - redis @ redis:alpine
