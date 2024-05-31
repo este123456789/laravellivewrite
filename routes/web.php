@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 Route::get('/detail/id/{id}',[MedicationController::class,'detail'] );
 Route::get('/medications',[MedicationController::class,'alljson'] );
+Route::any('/guardar',[MedicationController::class,'save'] );
 
 Route::middleware([
     'auth:sanctum',

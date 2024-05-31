@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Medication;
 use Illuminate\Http\Request;
 
+
+
 class MedicationController extends Controller
 {
     /**
@@ -34,6 +36,30 @@ class MedicationController extends Controller
         $medications = Medication::all();
 
         return response()->json($medications);
+    }
+    /**
+     * Add object medication.
+     */
+    public function save(Request $request)
+    {     
+        $msg = '';
+        if(
+            $request->isMethod('post')
+        ){
+            
+            $medication = new Medication;
+
+            $medication->name = $request->name;
+            $medication->description = $request->description;
+            $medication->price = $request->price;
+            $medication->save();
+            $msg = 'Guardado exitosamente';
+        }
+
+
+
+            return view('medication.save',['msg'=>$msg]);
+
     }
 
 

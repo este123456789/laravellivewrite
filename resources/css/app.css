@@ -21,3 +21,40 @@
     flex-flow: column nowrap;
     list-style: none;
 }
+.form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 1rem;
+}
+.form div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.form input {
+    margin: 1rem 0;
+}
+.form__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form__msg {
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 300px;
+}
+.save svg {
+    width: 30px;
+}
