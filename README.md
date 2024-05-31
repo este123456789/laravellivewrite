@@ -12,14 +12,15 @@ Test carried out for Farmalink company.
 - Import database db.sql
    
 
--Login
+# Login in
 --http://127.0.0.1:8000/login
 -- User : e@e.com
 -- Pass : 123
 
 
 
-Stack:
+
+# Stack:
 
 - app @ php:8.1-fpm-alpine
 - nginx @ nginx:alpine
